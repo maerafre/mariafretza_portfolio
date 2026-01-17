@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Maria Fretza</title>
+  <meta name="description" content="Contact — send a message or schedule a call." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Maria Fretza</a>
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <button id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="digital-marketing.html">Digital Marketing</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="content-writing.html">Content Writing</a></li>
+          <li><a href="web-dev.html">Web Dev</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions" style="display:flex;gap:.5rem;align-items:center">
+        <button id="theme-toggle" class="btn theme-toggle" aria-pressed="false" aria-label="Toggle light and dark mode"><span id="theme-icon" aria-hidden="true">🌙</span></button>
+        <a class="btn primary" href="contact.html">Contact me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs"><a href="index.html">Home</a> › <span>Contact</span></nav>
+
+    <article>
+      <header class="page-header">
+        <h1>Contact</h1>
+        <p class="lead">Primary CTA: Book a call or send a message — I typically reply within 48 hours.</p>
+      </header>
+
+      <section>
+        <h2>Send a message</h2>
+        <form action="https://formspree.io/f/{your-id}" method="POST" class="card">
+          <label>
+            Your name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Your email
+            <input type="email" name="_replyto" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <p><button class="btn primary" type="submit">Send message</button></p>
+          <input type="hidden" name="_subject" value="Portfolio contact from website">
+        </form>
+        <p class="muted">Or email: <a href="mailto:you@example.com">you@example.com</a> — Calendly: <a href="#">Schedule a call</a></p>
+      </section>
+    </article>
+
+    <aside class="page-aside">
+      <div class="card">
+        <h4>Quick info</h4>
+        <p>Response time: ~48 hours</p>
+        <p>Available for: Full-time · Contract · Freelance</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2026 Maria Fretza</small>
+    </div>
+  </footer>
+</body>
+</html>
