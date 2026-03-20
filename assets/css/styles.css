@@ -1,59 +1,57 @@
-.light-theme {
-    --background-color: #ffffff;
-    --text-color: #333;
-    --primary-color: #007bff;
-    --button-background: #007bff;
-    --button-text-color: #fff;
-}
-
-.dark-theme {
-    --background-color: #333;
-    --text-color: #f9f9f9;
-    --primary-color: #1a73e8;
-    --button-background: #1a73e8;
-    --button-text-color: #fff;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: Arial, sans-serif;
-    transition: background-color 0.5s, color 0.5s;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
     padding: 0;
 }
 
-button {
-    background-color: var(--button-background);
-    color: var(--button-text-color);
+.nav li {
+    margin: 0 15px;
+}
+
+.section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover {
-    transform: scale(1.05);
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s;
-}
-
-input:focus, textarea:focus {
-    border-color: var(--primary-color);
-    outline: none;
-}
-
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
+.button:hover {
+    background-color: #0056b3;
 }
